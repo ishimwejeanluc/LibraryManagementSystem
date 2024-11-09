@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+    #home {
+      background: url('https://api.unsplash.com/search/photos?query=library') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    #about, #services, #contact {
+      padding: 80px 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #343a40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Library System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h1 class="display-4">Welcome to AUCA Library</h1>
+      <p class="lead">Manage your library experience seamlessly and efficiently.</p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="text-center">The AUCA Library System is designed to enhance the library management experience by streamlining book borrowing, membership tracking, and fee management. Our mission is to support learning and research through a well-organized system and accessible resources.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/200x200/?book" class="rounded-circle mb-3" alt="Borrowing">
+          <h4>Book Borrowing</h4>
+          <p>Borrow books based on your membership type, with flexible return dates and minimal hassle.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/200x200/?shelf" class="rounded-circle mb-3" alt="Shelving">
+          <h4>Shelving System</h4>
+          <p>Easy-to-use shelving and room management to keep the library organized and accessible.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://source.unsplash.com/200x200/?fine" class="rounded-circle mb-3" alt="Fees">
+          <h4>Late Fees</h4>
+          <p>Automated late fee calculation to ensure fair usage of library resources for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-center">For any questions or support, please reach out to our team.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
